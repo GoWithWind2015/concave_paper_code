@@ -17,14 +17,14 @@ import watershed
 start = time.process_time()
 workspace_base_dir  = "/home/hhd/workspace/longi_coal_picture/"
 
-img_name = "./img/2307_01652_33_032.tif"
-img_name = "./img/2316_00239_26_027.tif"
-img_name = "./img/2322_00241_21_035.tif"
+#img_name = "./img/2307_01652_33_032.tif"
+#img_name = "./img/2316_00239_26_027.tif"
+#img_name = "./img/2322_00241_21_035.tif"  
 img_name = "./img/2357_00254_20_034.tif"
-img_name = "./img/2815_01984_20_018.tif"
-img_name = "./img/2820_00291_18_016.tif"
-img_name = "./img/5134_00707_18_005.tif"
-img_name = "./img/5819_00841_18_002.tif"
+#img_name = "./img/2815_01984_20_018.tif"
+#img_name = "./img/2820_00291_18_016.tif"
+#img_name = "./img/5134_00707_18_005.tif"
+#img_name = "./img/5819_00841_18_002.tif"
 
 global_variable = {}
 
