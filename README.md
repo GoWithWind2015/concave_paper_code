@@ -1,98 +1,106 @@
-凹点检测论文对应代码
-#### 使用conda 创建环境
+# code corresponding to 《Splitting ore from X-ray image based on improved robust concave-point algorithm》
+#### creat enviroment using conda 
 ```shell
 conda create --name picture_deal python=3.7
 ```
 
-#### 环境安装
+#### install pyton development enviroment
 ```shell
 conda activate picture_deal
 pip install -r requirements.txt
 ```
 
-#### 代码运行
+#### run code
 ```shell
-# 运行凹点文章中提出的凹点检测匹配算法
+# run the algorithm proposed in this paper
 python qie_tu/main.py basic
 
-# 简单凹点匹配
+# simple concave point alogorithm
 python qie_tu/main.py simple
 
-# 分水岭
+# watershed algorithm
 python qie_tu/main.py watershed
 ```
 
-#### 测试情况统计
+#### test result
 
-2332图片统计: 
-| 算法名称 |  总的石块量 | 欠分割 |   过分割| 正确分割 |
+result of 2332: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|    24   |         1 |       0|         23 | 
-| 简单凹点|   24 |          1 |       2|         21| 
-|分水岭 |    24  |         0 |       0  |       24 | 
+|algorithm of this paper|    24   |         1 |       0|         23 | 
+| simple concave point|   24 |          1 |       2|         21| 
+|watershed algorithm|    24  |         0 |       0  |       24 | 
 
-2316图片统计: 
-|算法名称 | 总的石块量 |欠分割  |过分割| 正确分割   |
+result of 2316: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|  20|           2 |       0  |      18 |
-|简单凹点|  20|         1|       2 |       17|
-|分水岭   |  20 |           3 |        1|          16 |  
+| algorithm of this paper |  20|           2 |       0  |      18 |
+|simple concave point|  20|         1|       2 |       17|
+|watershed algorithm|  20 |           3 |        1|          16 |  
 
-2820图片统计: 
-| 算法名称 | 总的石块量 | 欠分割  | 过分割| 正确分割   |
+
+result of 2820: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|    15    |        1  |       0   |       14 |  
-|简单凹点|    15 |           1 |        0|          14|  
-|分水岭 |     15   |         2 |        0 |         13 |  
+| algorithm of this paper |  15|           1 |       0  |      14 |
+|simple concave point|  15|         1|       0 |       14|
+|watershed algorithm|  15 |           2 |        0|          13 |  
 
-5134图片统计: 
-|算法名称  |  总的石块量|   欠分割|    过分割|   正确分割  |   
+
+
+result of 5134: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|    1   |         0|         0   |       1 |  
-|简单凹点|    1     |       1 |        0 |         14|  
-|分水岭  |    1   |         2    |     0    |      13 |  
+|algorithm of this paper|    1   |         0|         0   |       1 |  
+|simple concave point|    1     |       1 |        0 |         14|  
+|watershed algorithm  |    1   |         2    |     0    |      13 |  
 
-2307图片统计: 
-|算法名称 |   总的石块量|   欠分割|    过分割|   正确分割|     
+
+result of 2307: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法 |   29    |        0  |       0     |     29 |  
-|简单凹点 |   29|            0|         2 |         27|  
-|分水岭 |   29 |         0|         0|          29 |  
+|algorithm of this paper |   29    |        0  |       0     |     29 |  
+|simple concave point |   29|            0|         2 |         27|  
+|watershed algorithm  |   29 |         0|         0|          29 |  
 
-2815图片统计: 
-|算法名称 |   总的石块量 |  欠分割|    过分割 |  正确分割   |  
+
+result of 2815: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|  17    |      0|       0 |       17 |  
-|简单凹点 | 17     |     0 |      2   |     15|  
-|分水岭   | 17      |    0  |     0  |      17 |  
+|algorithm of this paper|  17    |      0|       0 |       17 |  
+|simple concave point  | 17     |     0 |      2   |     15|  
+|watershed algorithm    | 17      |    0  |     0  |      17 |  
 
 
-2357图片统计: 
-|算法名称|  总的石块量| 欠分割 | 过分割 |正确分割   |  
+
+result of 2357: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法 | 26    |      1   |    0   |     25 |  
-|简单凹点 | 26    |      1  |     1    |    24 |  
-|分水岭   | 26     |     0   |    2     |   24 |  
+|algorithm of this paper | 26    |      1   |    0   |     25 |  
+| simple concave point  | 26    |      1  |     1    |    24 |  
+|watershed algorithm  | 26     |     0   |    2     |   24 |  
 
-5819图片统计: 
-|算法名称|  总的石块量| 欠分割 | 过分割| 正确分割 |    
-| --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|  2         |  0     |  0    |     2 |  
-|简单凹点|  2         | 0      |  1    |     1  |  
-|分水岭  |  2         | 0      |  0    |     2 |  
 
-总共统计:
-|算法名称|  总的石块量| 欠分割 | 过分割| 正确分割 |    
+result of 5819: 
+| algorithm |  number of stones | under-segmentatioin|  over-segmentation | segmentation properly |
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|  134         |  5     |  0    |     129 |  
-|简单凹点|  134         |5      |  10    |     119  |  
-|分水岭  |  134         | 7      |  3    |     124 |  
+|algorithm of this paper|  2         |  0     |  0    |     2 |  
+|simple concave point |  2         | 0      |  1    |     1  |  
+|watershed algorithm  |  2         | 0      |  0    |     2 |  
 
-总共统计(%):
-|算法名称|  总的石块量| 欠分割% | 过分割% | 正确分割% |    
+Summary:
+|algorithm |  number of stones | under-segmentatioin | over-segmentation| segmentation properly  |    
 | --- |        ---       | ---    |   ---   |  ---     |
-|本文算法|  134         |  3.73     |  0    |     96.27 |  
-|简单凹点|  134         | 3.73      |  7.46    |     88.81 |  
-|分水岭  |  134         | 5.22      |  2.24    |     92.54 |  
+|algorithm of this paper|  134         |  5     |  0    |     129 |  
+|simple concave point |  134         |5      |  10    |     119  |  
+|watershed algorithm |  134         | 7      |  3    |     124 |  
+
+Summary(%):
+
+|algorithm |  number of stones | under-segmentatioin(%) | over-segmentation(%)| segmentation properly(%)  |    
+| --- |        ---       | ---    |   ---   |  ---     |
+|algorithm of this paper|  134         |  3.73     |  0    |     96.27 |  
+|simple concave point |  134         | 3.73      |  7.46    |     88.81 |  
+|watershed algorithm  |  134         | 5.22      |  2.24    |     92.54 |  
 
 
