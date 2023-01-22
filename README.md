@@ -103,4 +103,5 @@ Summary(%):
 |simple concave point |  134         | 3.73      |  7.46    |     88.81 |  
 |watershed algorithm  |  134         | 5.22      |  2.24    |     92.54 |  
 
+[![DOI](https://zenodo.org/badge/591929582.svg)](https://zenodo.org/badge/latestdoi/591929582)
 
